@@ -5,7 +5,6 @@ import Navbar from './components/navbar/Navbar'
 import Hero from './components/navbar/hero/Hero'
 import Services from './components/services/Services'
 import Parallax from './parallax/Parallax'
-
 import Portfolio from './portfolio/Portfolio'
 
 
