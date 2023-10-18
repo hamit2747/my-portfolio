@@ -1,16 +1,14 @@
 import { motion,useScroll,useTransform} from 'framer-motion'
-import './parallax.scss'
 import { useRef } from 'react'
 
-
-const Parallax = ({type}) => {
+const Parallax = () => {
 
     const ref =useRef()
     const {scrollYProgress}= useScroll({
         target:ref,
         offset:['start start','end,start']
     })
-
+  
     const yBg = useTransform(scrollYProgress,[0, 1] ,
         ["0%","100%"]);
     const yText = useTransform(scrollYProgress,[0, 1] ,
@@ -31,13 +29,14 @@ const Parallax = ({type}) => {
   <motion.div style={{x:yText}} className="stars">
   
   </motion.div>
-
+  
   {type !== 'services' && (
   <motion.img className='down' style={{y: yBg}} src="/icons8-down.gif" alt="Resim Açıklaması" />
-)}
-
+  )}
+  
     </div>
   )
-}
+  }
+  
 
 export default Parallax
