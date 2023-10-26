@@ -96,7 +96,7 @@ const Contact = () => {
       <div className="formContainer4" >
         <motion.div initial={{ opacity: 1 }} whileInView={{ opacity: 0 }} transition={{ delay: 2, duration: 1 }} className='phoneSvg'>
           <svg width="450px" height="450px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <motion.path
+            <motion.path className='path'
               strokeWidth={0.2}
               fill="none"
               initial={{ pathLength: 0 }}

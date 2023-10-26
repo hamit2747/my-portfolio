@@ -16,6 +16,8 @@
           font-size: 12px;
           align-items: center;
           text-align: center;
+        
+          
          
          
     }
@@ -33,6 +35,11 @@
         width: 100%;
         height: 100%;
         overflow: hidden;
+        @include mobile{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+     }
 
         .wrapper2{
         max-width: 1366px;
@@ -45,6 +52,7 @@
 
        @include mobile{
        flex-direction: column;
+       gap: 0px;
 }
 
         }
@@ -52,9 +60,16 @@
         .imageContainer{
             flex:1;
             height: 50%;
+          
+          
+            
             @include mobile{
                width: 100%;
-               max-height: 300px;
+              
+               display: flex;
+               align-items: center;
+               justify-content: center;
+           
         }
    
         }
@@ -65,6 +80,8 @@
         object-fit: contain;
         @include mobile{
            object-fit: contain;
+           width: 200px;
+           height: 200px;
     }
 
 
@@ -79,6 +96,7 @@
                 transform: none !important;
                 align-items: center;
                 text-align: center;
+                gap:10px;
                
             }
             
@@ -115,8 +133,14 @@
 
 .featured{
     @include mobile{
+display: none;
+
+
+
  
 }
 }
+
+
 
   

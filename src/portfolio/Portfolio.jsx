@@ -40,7 +40,7 @@ const Single =({item}) =>{
 
     const y = useTransform(scrollYProgress,[0,1],['0%','-300%'])
     return (
-        <section ref={ref}>
+    <section ref={ref}>
       <div className='container'>
         <div className="wrapper2">
             <div className="imageContainer">
@@ -49,7 +49,7 @@ const Single =({item}) =>{
      <motion.div className="textContainer3" style={{y:y}}>
         <h2 >{item.title}</h2>
         <p>{item.desc}</p>
-        <a target="_blank" href={item.href}>See Demo</a>
+        <a className='demo-button' target="_blank" href={item.href}>See Demo</a>
      </motion.div>
      </div>
       </div>
